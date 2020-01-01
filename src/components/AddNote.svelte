@@ -5,9 +5,12 @@
     let desc
 
     const addNote = () => {
+        if (title.trim() != ""){
         db.collection('notes').add({
             title, desc
-        })
+        })} else  {
+            alert('judul tidak boleh kosong ya.... hehe 😎')
+        }
         title = ''
         desc = ''
     }
@@ -15,7 +18,7 @@
 
 <form on:submit|preventDefault={addNote}>
     <h3>Add Note</h3>
-    <input type="text" bind:value={title}>
+    <input type="text" bind:value={title} required>
     <textarea cols="10" rows="3" bind:value={desc}></textarea>
 
     <div class="actions">
