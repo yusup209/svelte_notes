@@ -1,4 +1,4 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+*anda bisa lihat hasil dari project ini [disini](http://svelte-notes.surge.sh/)
 
 ---
 
